@@ -27,7 +27,7 @@ export default () => {
     return (
         <section className="grid md:grid-cols-4 md:gap-8">
             <div className="relative col-span-4">
-                <img src={ARRAY_IMGS[index]} alt="" className="aspect-[16/12]" />
+                <img src={ARRAY_IMGS[index]} alt="" className="aspect-[16/12] w-full md:aspect-[16/15] md:rounded-md"/>
                 <div className="absolute top-1/2 left-0 -translate-y-1/2 w-full flex justify-between px-4">
                     <button className="grid place-items-center h-10 w-10 rounded-full bg-white" onClick={handleClickPrev}>
                         <PrevIcon />
@@ -37,10 +37,10 @@ export default () => {
                     </button>
                 </div>
             </div>
-            <img src={imgProductThumb1} alt="" className="hidden md:block" />
-            <img src={imgProductThumb2} alt="" className="hidden md:block" />
-            <img src={imgProductThumb3} alt="" className="hidden md:block" />
-            <img src={imgProductThumb4} alt="" className="hidden md:block" />
+            <img src={imgProductThumb1} alt="" className="hidden md:block md:rounded-md"/>
+            <img src={imgProductThumb2} alt="" className="hidden md:block md:rounded-md"/>
+            <img src={imgProductThumb3} alt="" className="hidden md:block md:rounded-md"/>
+            <img src={imgProductThumb4} alt="" className="hidden md:block md:rounded-md"/>
         </section>
     );
 };
